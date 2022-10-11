@@ -1,13 +1,19 @@
 public class Frog extends Amphibium{
 
 
+    public boolean towercontrol;
+
     public Frog(int height, String name, String color) {
         super(height, name, color);
     }
 
     public void makeSound(){
 
-        System.out.println("Quaak!!");
+        System.out.println("Frogs do Quaak!!");
+    }
+
+    public void towercontrol() {
+        System.out.println("Situation: HoverFrog to Frog conversation");
     }
 
 

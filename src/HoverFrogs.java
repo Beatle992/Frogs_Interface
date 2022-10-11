@@ -5,15 +5,17 @@ public class HoverFrogs extends Frog implements IHelicopter {
     protected String color;
 
     public HoverFrogs(int height, String name, String color) {
-        super(height, name, color);
+        super(height, name, color); }
 
+
+    public void makeSound(){
+
+        System.out.println("HoverFrogs do Quaak too!!");
     }
+
 
     public void hover() {
-        System.out.println("HoverFrog: "+ name + "starting to hover");
-    }
-
-
+        System.out.println("HoverFrog: "+ name + "starting to hover"); }
     public void takeoff() {
         System.out.println("Taking off...");
     }

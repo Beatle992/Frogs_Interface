@@ -1,10 +1,7 @@
-public interface IHelicopter {
+public interface IHelicopter extends Aircraft {
 
     public void hover();
-    public void takeoff();
-    public void getAltitude();
     public void hoverInPlace();
-    public void land();
     public void landVertically();
     public void takeOffVerticaly();
 }

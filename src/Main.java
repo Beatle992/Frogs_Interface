@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
+        System.out.println("-------------------------------------------------------");
 
                 HoverFrogs hover = new HoverFrogs(33, "HoverFrog", "green");
                 hover.makeSound();
@@ -14,6 +15,10 @@ public class Main {
                 System.out.println(frog.getColor());
                 System.out.println(frog.getHeight());
 
+                System.out.println("-------------------------------------------------------");
+
+                frog.towercontrol();
+                System.out.println();
                 System.out.println();
 
                 frog.requestAltitude(hover);
