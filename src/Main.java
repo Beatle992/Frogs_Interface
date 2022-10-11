@@ -17,7 +17,7 @@ public class Main {
 
                 System.out.println("-------------------------------------------------------");
 
-                frog.towercontrol();
+                frog.towerControl();
                 System.out.println();
                 System.out.println();
 

@@ -1,7 +1,7 @@
 public class Frog extends Amphibium{
 
 
-    public boolean towercontrol;
+
 
     public Frog(int height, String name, String color) {
         super(height, name, color);
@@ -12,7 +12,7 @@ public class Frog extends Amphibium{
         System.out.println("Frogs do Quaak!!");
     }
 
-    public void towercontrol() {
+    public void towerControl() {
         System.out.println("Situation: HoverFrog to Frog conversation");
     }
 
