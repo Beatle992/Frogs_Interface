@@ -1,40 +1,42 @@
-public class HoverFrogs extends Frog implements IHelicopter{
+public class Helicopter_Pilot extends Tower_Control implements IHelicopter{
+
+    //HoverFrogs
 
     protected String name;
-    protected int height;
-    protected String color;
-    private int altitute = 0;
+    protected int birthDate;
+    protected String subSpecies;
+    private int altitude = 0;
 
-    public HoverFrogs(int height, String name, String color) {
-        super(height, name, color); }
+    public Helicopter_Pilot(int birthDate, String name, String subSpecies) {
+        super(birthDate, name, subSpecies); }
 
 
     public void makeSound(){
 
-        System.out.println("HoverFrogs do Quaak too!!");
+        System.out.println("Helicopter_Pilot says: I'm Jack, a Helicopter Pilot!!");
     }
 
 
     public void climb(){
-        altitute += 1000;
+        altitude += 1000;
         getAltitude();
     }
 
     public void descend() {
-        if (altitute == 0) {
+        if (altitude == 0) {
             return;
         }
-        altitute -= 1000;
+        altitude -= 1000;
         getAltitude();
     }
 
     public void hover() {
-        System.out.println("HoverFrog: "+ name + "starting to hover");
+        System.out.println("HelicopterPilot: "+ name + "starting to hover");
     }
 
     public void takeoff() {
-        altitute = 1000;
-        System.out.println("Taking off..." + altitute + " feet");
+        altitude = 1000;
+        System.out.println("Taking off..." + altitude + " feet");
     }
 
     public void takeOffVerticaly() {
@@ -42,7 +44,7 @@ public class HoverFrogs extends Frog implements IHelicopter{
     }
 
     public void getAltitude() {
-        System.out.println("getting altitude... " + altitute);
+        System.out.println("getting altitude... " + altitude);
     }
 
     public void hoverInPlace() {
@@ -56,11 +58,5 @@ public class HoverFrogs extends Frog implements IHelicopter{
     public void landVertically() {
         System.out.println("vertical landing...");
     }
-
-
-
-
-
-
 
 }

@@ -1,7 +1,7 @@
-public class ATCToad extends Toads implements ATC{
+public class ATCBird extends Bird implements ATC{
 
-    public ATCToad(int height, String name, String color) {
-        super(height, name, color);
+    public ATCBird(int birtDate, String name, String subSpecies) {
+        super(birtDate, name, subSpecies);
     }
 
 

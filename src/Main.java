@@ -3,69 +3,103 @@ public class Main {
 
                 System.out.println("-------------------------------------------------------");
 
-                Toads toad = new Toads(50, "Toad", "darkgreen");
-                toad.makeSound();
-                System.out.println(toad.getColor());
-                System.out.println(toad.getHeight());
+                Bird sparrow = new Bird(1 , "Bird", "Sparrow");
+                sparrow.makeSound();
+                System.out.println(sparrow.getSubSpecies());
+                System.out.println(sparrow.getBirthDate());
 
                 System.out.println("-------------------------------------------------------");
 
-                HoverFrogs hover = new HoverFrogs(33, "HoverFrog", "green");
-                hover.makeSound();
+                Helicopter_Pilot Jack = new Helicopter_Pilot(33, "Jack, Helicopter Pilot", "Human");
+                Jack.makeSound();
 
-                System.out.println(hover.getColor());
+                System.out.println(Jack.getSubSpecies());
 
-                System.out.println(hover.getHeight());
-
-                System.out.println("-------------------------------------------------------");
-
-                Frog frog = new Frog(12, "Frog" , "green" );
-                frog.makeSound();
-                System.out.println(frog.getColor());
-                System.out.println(frog.getHeight());
+                System.out.println(Jack.getBirthDate());
 
                 System.out.println("-------------------------------------------------------");
 
-                frog.towerControl();
-                System.out.println();
-                System.out.println();
+                Jet_Pilot John = new Jet_Pilot(50, "John, Jet Pilot", "Human");
+                John.makeSound();
 
-                frog.requestAltitude(hover);
+                System.out.println(John.getSubSpecies());
 
-                System.out.println();
+                System.out.println(John.getBirthDate());
 
-                frog.instructHover(hover);
+                System.out.println("-------------------------------------------------------");
 
-                System.out.println();
 
-                frog.instructHoveringInPlace(hover);
 
-                System.out.println();
+                Tower_Control controller = new Tower_Control(12, "Tower_Control" , "Human" );
+                controller.makeSound();
+                System.out.println(controller.getSubSpecies());
+                System.out.println(controller.getBirthDate());
 
-                frog.instructToLand(hover);
+                System.out.println("-------------------------------------------------------");
 
-                System.out.println();
-
-                frog.instructToLandVertically(hover);
+                controller.towerControl();
 
                 System.out.println();
-
-                frog.instructTakeOff(hover);
-
                 System.out.println();
 
-                frog.takeOffVerticaly(hover);
-
+                controller.requestAltitude(Jack);
 
                 System.out.println();
 
-                frog.instrucToClimb(hover);
+                controller.instructHover(Jack);
 
                 System.out.println();
 
-                frog.instrucToDescend(hover);
+                controller.instructHoveringInPlace(Jack);
 
-            }
+                System.out.println();
+
+                controller.instructToLand(Jack);
+
+                System.out.println();
+
+                controller.instructToLandVertically(Jack);
+
+                System.out.println();
+
+                controller.instructTakeOff(Jack);
+
+                System.out.println();
+
+                controller.takeOffVerticaly(Jack);
+
+                System.out.println();
+
+                controller.instrucToClimb(Jack);
+
+                System.out.println();
+
+                controller.instrucToDescend(Jack);
+
+                System.out.println("-------------------------------------------------------");
+
+                controller.requestAltitude(John);
+
+                System.out.println();
+
+                controller.instructToLand(John);
+
+                System.out.println();
+
+                controller.instructTakeOff(John);
+
+                System.out.println();
+
+                controller.instrucToClimb(John);
+
+                System.out.println();
+
+                controller.instrucToDescend(John);
+
+
+
+
+    }
 
 
         }
