@@ -10,6 +10,10 @@ public abstract class Amphibium {
             this.color = color;
             this.height = height;
             this.name = name;
+
+            System.out.println(name);
+
+            System.out.println(name +" I am ready to take off");
         }
 
         public int getHeight(){

@@ -1,8 +1,5 @@
 public class Frog extends Amphibium{
 
-
-
-
     public Frog(int height, String name, String color) {
         super(height, name, color);
     }
@@ -13,7 +10,8 @@ public class Frog extends Amphibium{
     }
 
     public void towerControl() {
-        System.out.println("Situation: HoverFrog to Frog conversation");
+        System.out.println("\033[3mSituation: HoverFrog to Frog conversation\033[0m");
+
     }
 
 
@@ -55,7 +53,15 @@ public class Frog extends Amphibium{
         hoverFrog.land();
     }
 
+    protected void instrucToClimb(HoverFrogs hoverFrog){
+        System.out.println("Frog to "+hoverFrog.getName() +": Climb 1000 feet");
+        hoverFrog.climb();
+    }
 
+    protected void instrucToDescend(HoverFrogs hoverFrog){
+        System.out.println("Frog to "+hoverFrog.getName() +": Descend 1000 feet");
+        hoverFrog.descend();
+    }
 
 }
 

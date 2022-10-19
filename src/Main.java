@@ -1,11 +1,20 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("-------------------------------------------------------");
+                System.out.println("-------------------------------------------------------");
+
+                Toads toad = new Toads(50, "Toad", "darkgreen");
+                toad.makeSound();
+                System.out.println(toad.getColor());
+                System.out.println(toad.getHeight());
+
+                System.out.println("-------------------------------------------------------");
 
                 HoverFrogs hover = new HoverFrogs(33, "HoverFrog", "green");
                 hover.makeSound();
+
                 System.out.println(hover.getColor());
+
                 System.out.println(hover.getHeight());
 
                 System.out.println("-------------------------------------------------------");
@@ -48,5 +57,15 @@ public class Main {
                 frog.takeOffVerticaly(hover);
 
 
+                System.out.println();
+
+                frog.instrucToClimb(hover);
+
+                System.out.println();
+
+                frog.instrucToDescend(hover);
+
             }
+
+
         }
